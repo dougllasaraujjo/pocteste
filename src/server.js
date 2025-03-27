@@ -1,0 +1,1 @@
+const express = require('express');\nconst app = express();\n\napp.get('/ping', (req, res) => {\n  res.send('pong');\n});\n\nconst PORT = 53068;\napp.listen(PORT, '0.0.0.0', () => {\n  console.log('Server is running on http://localhost:' + PORT + '...');\n});
